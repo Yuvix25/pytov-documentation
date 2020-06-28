@@ -36,7 +36,14 @@
 <h1><strong>Pytov’s syntax</strong><a class="headerlink" href="#pytov-s-syntax" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="blocks">
 <h2>Blocks<a class="headerlink" href="#blocks" title="Permalink to this headline">¶</a></h2>
-<p>In pytov, blocks are now better.<br />You dont use colons to start a block, to use identation (and to get identation error).<br />With pytov, you simply start a block with <code class="docutils literal notranslate"><span class="pre">{</span></code> and end it with <code class="docutils literal notranslate"><span class="pre">}</span></code> (see example bellow), and the best part, the identation doesn’t matters!</p>
+<div class="line-block">
+<div class="line">In pytov, blocks are now better.</div>
+<div class="line">You dont use colons to start a block, to use identation (and to get
+identation error).</div>
+<div class="line">With pytov, you simply start a block with <code class="docutils literal notranslate"><span class="pre">{</span></code> and end it with <code class="docutils literal notranslate"><span class="pre">}</span></code>
+(see example bellow), and the best part, the identation doesn’t
+matters!</div>
+</div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="kc">True</span><span class="p">{</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;pytov&quot;</span><span class="p">)</span>
 <span class="p">}</span>
@@ -48,7 +55,13 @@
 <h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="multiline">
 <h3><strong>Multiline</strong><a class="headerlink" href="#multiline" title="Permalink to this headline">¶</a></h3>
-<p>In python, there are no multiline comments only <code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;not</span> <span class="pre">a</span> <span class="pre">real</span> <span class="pre">comment,</span> <span class="pre">just</span> <span class="pre">a</span> <span class="pre">string&quot;&quot;&quot;</span></code>, but it gives you an error from time to time.<br />So to fix that, in pytov you can use multiline comments with bellow syntax.</p>
+<div class="line-block">
+<div class="line">In python, there are no multiline comments only
+<code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;not</span> <span class="pre">a</span> <span class="pre">real</span> <span class="pre">comment,</span> <span class="pre">just</span> <span class="pre">a</span> <span class="pre">string&quot;&quot;&quot;</span></code>, but it gives you an error
+from time to time.</div>
+<div class="line">So to fix that, in pytov you can use multiline comments with bellow
+syntax.</div>
+</div>
 <div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm">This is a multiline comments</span>
 <span class="cm">Just like in C languages (and almost every programming language except python), all you need to do, is just start it with / and *, and end it with * and /</span>
@@ -60,7 +73,11 @@
 </div>
 <div class="section" id="single-line">
 <h3><strong>Single Line</strong><a class="headerlink" href="#single-line" title="Permalink to this headline">¶</a></h3>
-<p>If before comming to python you programmed in other languages, you might got a few syntax errors on using <code class="docutils literal notranslate"><span class="pre">//</span></code> instead of <code class="docutils literal notranslate"><span class="pre">#</span></code> for single line comments, so to solve this issue, in pytov <code class="docutils literal notranslate"><span class="pre">//</span></code> this a single line comment too, and to perform floor division (originally by <code class="docutils literal notranslate"><span class="pre">//</span></code>) you can now use <code class="docutils literal notranslate"><span class="pre">/_</span></code> (see example bellow).</p>
+<p>If before comming to python you programmed in other languages, you might
+got a few syntax errors on using <code class="docutils literal notranslate"><span class="pre">//</span></code> instead of <code class="docutils literal notranslate"><span class="pre">#</span></code> for single line
+comments, so to solve this issue, in pytov <code class="docutils literal notranslate"><span class="pre">//</span></code> this a single line
+comment too, and to perform floor division (originally by <code class="docutils literal notranslate"><span class="pre">//</span></code>) you
+can now use <code class="docutils literal notranslate"><span class="pre">/_</span></code> (see example bellow).</p>
 <div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="m">1</span> <span class="p">/</span><span class="n">_</span> <span class="m">3</span> <span class="p">==</span> <span class="m">0</span><span class="p">){</span>
     <span class="n">print</span><span class="p">(</span><span class="s">&quot;new floor division syntax&quot;</span><span class="p">)</span>
     <span class="c1">// a single line comment</span>
@@ -72,8 +89,13 @@
 <hr class="docutils" />
 <div class="section" id="boolean-operators">
 <h2>Boolean operators<a class="headerlink" href="#boolean-operators" title="Permalink to this headline">¶</a></h2>
-<p>Just like the single line comments issue, you might have also got a syntax error for using <code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code> or <code class="docutils literal notranslate"><span class="pre">||</span></code> or <code class="docutils literal notranslate"><span class="pre">!</span></code>.
-So again, in pytov, you can now use both them and the regular python boolean operators (<code class="docutils literal notranslate"><span class="pre">and</span></code>=<code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code>=<code class="docutils literal notranslate"><span class="pre">||</span></code>, <code class="docutils literal notranslate"><span class="pre">not</span></code>=<code class="docutils literal notranslate"><span class="pre">!</span></code>).<br />Example:</p>
+<div class="line-block">
+<div class="line">Just like the single line comments issue, you might have also got a
+syntax error for using <code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code> or <code class="docutils literal notranslate"><span class="pre">||</span></code> or <code class="docutils literal notranslate"><span class="pre">!</span></code>. So again, in pytov,
+you can now use both them and the regular python boolean operators
+(<code class="docutils literal notranslate"><span class="pre">and</span></code>=<code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code>=<code class="docutils literal notranslate"><span class="pre">||</span></code>, <code class="docutils literal notranslate"><span class="pre">not</span></code>=<code class="docutils literal notranslate"><span class="pre">!</span></code>).</div>
+<div class="line">Example:</div>
+</div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>if True &amp;&amp; False{
     print(&quot;&amp;&amp; = and&quot;)
 }
@@ -86,7 +108,7 @@ if !False{
 </pre></div>
 </div>
 <hr class="docutils" />
-<p><a class="reference internal" href="index.html"><span class="doc">Back to main page</span></a></p>
+<p><a class="reference external" href="index.rst">Back to main page</a></p>
 </div>
 </div>
 
@@ -145,7 +167,7 @@ if !False{
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/syntax.md.txt"
+      <a href="_sources/syntax.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 
