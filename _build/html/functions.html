@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pytov functions &#8212; pytov 0.1.8 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="pytov-functions">
+<h1>Pytov functions<a class="headerlink" href="#pytov-functions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="switch">
+<h2>Switch<a class="headerlink" href="#switch" title="Permalink to this headline">¶</a></h2>
+<p>Instead of using tons of if elses, in pytov you can use the switch statement.<br />The switch statement in pytov is function, which you call with 2 - 3 arguments, value to switch on, cases, and optionally default case (by order).</p>
+<ul class="simple">
+<li><p>value - anything</p></li>
+<li><p>cases - a dictionery of values and callbacks</p></li>
+<li><p>default case - a callback</p></li>
+</ul>
+<p>The switch will find the case key that matches the given value, and execute its callback, if no key matches the value and default case exists, it will call the default case.</p>
+<div class="section" id="example-1-default-case-not-called">
+<h3>Example 1 (default case not called):<a class="headerlink" href="#example-1-default-case-not-called" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">switch</span><span class="p">(</span><span class="s2">&quot;sample&quot;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s2">&quot;example&quot;</span><span class="p">:</span> <span class="k">lambda</span> <span class="p">{</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;not this one...&quot;</span><span class="p">)</span> <span class="p">},</span>
+    <span class="s2">&quot;banana&quot;</span><span class="p">:</span> <span class="k">lambda</span> <span class="p">{</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;thats not it&quot;</span><span class="p">)</span> <span class="p">},</span>
+    <span class="s2">&quot;sample&quot;</span><span class="p">:</span> <span class="k">lambda</span> <span class="p">{</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;found it!&quot;</span><span class="p">)</span> <span class="p">},</span>
+<span class="p">},</span>  
+    <span class="k">lambda</span> <span class="p">{</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the default case will not execute, beacuse the switch found &#39;sample&#39; inside the cases&quot;</span><span class="p">)</span> <span class="p">},</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-2-default-case-called">
+<h3>Example 2 (default case called):<a class="headerlink" href="#example-2-default-case-called" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">switch</span><span class="p">(</span><span class="s2">&quot;sample&quot;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="s2">&quot;example&quot;</span><span class="p">:</span> <span class="k">lambda</span> <span class="p">{</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;not this one...&quot;</span><span class="p">)</span> <span class="p">},</span>
+    <span class="s2">&quot;banana&quot;</span><span class="p">:</span> <span class="k">lambda</span> <span class="p">{</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;thats not it&quot;</span><span class="p">)</span> <span class="p">},</span>
+    <span class="s2">&quot;notsample&quot;</span><span class="p">:</span> <span class="k">lambda</span> <span class="p">{</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;so close!&quot;</span><span class="p">)</span> <span class="p">},</span>
+<span class="p">},</span>
+    <span class="k">lambda</span> <span class="p">{</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;i&#39;m called because there was no match in the cases.&quot;</span><span class="p">)</span> <span class="p">},</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p><a class="reference internal" href="index.html"><span class="doc">Back to main page</span></a></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">pytov</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Yuval Rosen.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/functions.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
