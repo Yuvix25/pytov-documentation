@@ -14,4 +14,4 @@ About pytov
 
 .. _GitHub: https://github.com/Yuvix25/pytov
 .. _Pip: https://pypi.org/project/pytov/
-.. _Back to main page: index.rst
+.. _Back to main page: index.html

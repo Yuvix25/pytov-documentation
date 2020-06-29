@@ -83,4 +83,4 @@ Boolean operators
 
 `Back to main page`_
 
-.. _Back to main page: index.rst
+.. _Back to main page: index.html
