@@ -1,7 +1,7 @@
 About pytov
 ===========
 
-| Pytov is a syntax manipulation to python, which makes it easier to
+| Pytov is a manipulation to python inspired by C#, which makes it easier to
   code in after passing from other languages.
 | It was built by Yuval Rosen in 2020.
 
