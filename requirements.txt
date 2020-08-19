@@ -1,10 +1,1 @@
-python:
-   version: 3.7
-   install:
-      - method: pip
-        path: .
-        extra_requirements:
-           - docs
-           - rtcat_sphinx_theme
-      - method: setuptools
-        path: package
+rtcat_sphinx_theme
