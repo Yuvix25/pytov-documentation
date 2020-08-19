@@ -101,4 +101,4 @@ html_theme = "sphinx_rtd_theme"
 
 
 def setup(app):
-    app.add_stylesheet("css/theme.css")
+    app.add_css_file("css/theme.css")
