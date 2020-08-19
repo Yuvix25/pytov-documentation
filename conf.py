@@ -93,4 +93,4 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
-html_theme = 'nature'
+html_theme = 'rtcat_sphinx_theme'
