@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
@@ -11,48 +12,55 @@
   
 
   
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-
-  
   
   
   
 
   
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+
+  
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-    
-    <link rel="author" title="About these documents" href="about.html" />
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Pytov functions" href="functions.html" />
-    <link rel="prev" title="Welcome to pytov’s documentations!" href="index.html" /> 
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+        <link rel="author" title="About these documents"
+              href="about.html"/>
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="pytov 0.2.0 documentation" href="index.html"/>
+        <link rel="next" title="Pytov functions" href="functions.html"/>
+        <link rel="prev" title="Welcome to pytov’s documentations!" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
    
   <div class="wy-grid-for-nav">
+
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search">
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pytov
+            <a href="index.html" class="icon icon-home"> pytov
           
 
           
@@ -75,7 +83,6 @@
           
         </div>
 
-        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -102,14 +109,13 @@
             
           
         </div>
-        
       </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">pytov</a>
@@ -117,10 +123,9 @@
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -141,7 +146,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
       <li><strong>Pytov’s syntax</strong></li>
     
@@ -174,7 +179,7 @@ identation error).</div>
 (see example bellow), and the best part, the identation doesn’t
 matters!</div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="kc">True</span><span class="p">{</span>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="kc">True</span><span class="p">{</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;pytov&quot;</span><span class="p">)</span>
 <span class="p">}</span>
 </pre></div>
@@ -192,12 +197,12 @@ from time to time.</div>
 <div class="line">So to fix that, in pytov you can use multiline comments with bellow
 syntax.</div>
 </div>
-<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
-<span class="cm">This is a multiline comments</span>
-<span class="cm">Just like in C languages (and almost every programming language except python), all you need to do, is just start it with / and *, and end it with * and /</span>
-<span class="cm">*/</span>
+<div class="code c# highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/*</span>
+<span class="n">This</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">multiline</span> <span class="n">comments</span>
+<span class="n">Just</span> <span class="n">like</span> <span class="ow">in</span> <span class="n">C</span> <span class="n">languages</span> <span class="p">(</span><span class="ow">and</span> <span class="n">almost</span> <span class="n">every</span> <span class="n">programming</span> <span class="n">language</span> <span class="k">except</span> <span class="n">python</span><span class="p">),</span> <span class="nb">all</span> <span class="n">you</span> <span class="n">need</span> <span class="n">to</span> <span class="n">do</span><span class="p">,</span> <span class="ow">is</span> <span class="n">just</span> <span class="n">start</span> <span class="n">it</span> <span class="k">with</span> <span class="o">/</span> <span class="ow">and</span> <span class="o">*</span><span class="p">,</span> <span class="ow">and</span> <span class="n">end</span> <span class="n">it</span> <span class="k">with</span> <span class="o">*</span> <span class="ow">and</span> <span class="o">/</span>
+<span class="o">*/</span>
 
-<span class="n">print</span><span class="p">(</span><span class="s">&quot;the above text will not execute, because it is a comment, but this code will.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the above text will not execute, because it is a comment, but this code will.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -208,9 +213,9 @@ got a few syntax errors on using <code class="docutils literal notranslate"><spa
 comments, so to solve this issue, in pytov <code class="docutils literal notranslate"><span class="pre">//</span></code> this a single line
 comment too, and to perform floor division (originally by <code class="docutils literal notranslate"><span class="pre">//</span></code>) you
 can now use <code class="docutils literal notranslate"><span class="pre">/_</span></code> (see example bellow).</p>
-<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="m">1</span> <span class="p">/</span><span class="n">_</span> <span class="m">3</span> <span class="p">==</span> <span class="m">0</span><span class="p">){</span>
-    <span class="n">print</span><span class="p">(</span><span class="s">&quot;new floor division syntax&quot;</span><span class="p">)</span>
-    <span class="c1">// a single line comment</span>
+<div class="code c# highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span><span class="n">_</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;new floor division syntax&quot;</span><span class="p">)</span>
+    <span class="o">//</span> <span class="n">a</span> <span class="n">single</span> <span class="n">line</span> <span class="n">comment</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -226,7 +231,7 @@ you can now use both them and the regular python boolean operators
 (<code class="docutils literal notranslate"><span class="pre">and</span></code>=<code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code>=<code class="docutils literal notranslate"><span class="pre">||</span></code>, <code class="docutils literal notranslate"><span class="pre">not</span></code>=<code class="docutils literal notranslate"><span class="pre">!</span></code>).</div>
 <div class="line">Example:</div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>if True &amp;&amp; False{
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span>if True &amp;&amp; False{
     print(&quot;&amp;&amp; = and&quot;)
 }
 if True || False{
@@ -244,7 +249,9 @@ if !False{
 
 
            </div>
-           
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
@@ -253,7 +260,7 @@ if !False{
         <a href="functions.html" class="btn btn-neutral float-right" title="Pytov functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to pytov’s documentations!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="Welcome to pytov’s documentations!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -262,19 +269,11 @@ if !False{
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2020, Yuval Rosen
+        &copy; Copyright 2020, Yuval Rosen.
 
     </p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -286,15 +285,37 @@ if !False{
   </div>
   
 
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.2.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
 
   
   
-    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
    
 
 </body>
