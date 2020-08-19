@@ -37,6 +37,7 @@ release = '0.2.0'
 extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.githubpages',
+    "sphinx_rtd_theme",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -94,12 +95,6 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
-import os
+import sphinx_rtd_theme
 
-os.system('pip3 install rtcat_sphinx_theme')
-import rtcat_sphinx_theme
-html_theme_path = [rtcat_sphinx_theme.get_html_theme_path()]
-html_css_files = [
-    'css/theme.css',
-]
-html_theme = 'rtcat_sphinx_theme'
+html_theme = "sphinx_rtd_theme"
