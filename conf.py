@@ -93,6 +93,13 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
-html_theme = 'rtcat_sphinx_theme'
+
 import rtcat_sphinx_theme
+
+extensions = [
+    'rtcat_sphinx_theme',
+]
+
 html_theme_path = [rtcat_sphinx_theme.get_html_theme_path()]
+
+html_theme = 'rtcat_sphinx_theme'
